@@ -93,7 +93,7 @@ export default function CartPage() {
                     <div className="flex-1">
                       <h3 className="font-medium">{item.name}</h3>
                       <p className="text-sm text-slate-600">
-                        {item.price}сум х {item.quantity}
+                        {Number(item.price)} сум × {item.quantity}
                       </p>
                       <div className="flex gap-2 mt-2">
                         <Button

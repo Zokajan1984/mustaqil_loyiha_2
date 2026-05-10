@@ -108,7 +108,7 @@ export default function Home() {
                 <p className="text-sm text-slate-600 mt-2">{p.description}</p>
               </CardContent>
               <CardFooter className="p-4 flex justify-between items-center">
-                <span className="font-bold text-xl">{p.price}сум</span>
+                <span className="font-bold text-xl">{Number(p.price)} сум</span>{" "}
                 <Button onClick={() => addItem(p)}>В корзину</Button>
               </CardFooter>
             </Card>

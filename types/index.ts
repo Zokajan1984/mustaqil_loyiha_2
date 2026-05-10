@@ -24,6 +24,6 @@ export interface Order {
   address: string;
   items: CartItem[];
   total: number;
-  satatus: "new" | "cooking" | "delivered";
+  status: "new" | "cooking" | "delivered";
   createdAt: string;
 }

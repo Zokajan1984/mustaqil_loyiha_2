@@ -54,8 +54,10 @@ export const useCart = create<CartState>()(
       clear: () => set({ items: [] }), // очистка
 
       total: () => {
-        // считаем сумму: цена * количество для каждого
-        return get().items.reduce((sum, i) => sum + i.price * i.quantity, 0);
+        return get().items.reduce(
+          (sum, i) => sum + Number(i.price) * i.quantity,
+          0,
+        );
       },
     }),
     { name: "pizza-cart" }, // ключ в localStorage
